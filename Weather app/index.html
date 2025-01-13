@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body class="bg-[url('https://cdn.pixabay.com/photo/2023/12/12/19/08/moutains-8445767_1280.jpg')] w-screen h-screen bg-cover bg-center bg-no-repeat">
+    <div class="flex justify-center items-center h-full w-full">
+        <div class="bg-[url('https://cdn.pixabay.com/photo/2022/11/11/13/00/clouds-7584944_1280.jpg')] opacity-90 bg-cover  max-w-sm w-full rounded-lg p-8 shadow-2xl">
+            <h2 class="text-center text-3xl text-white mb-6 font-bold">Weather</h2>
+            <div class="flex items-center justify-center flex-col">
+                <input id="input" class="mb-4 w-full bg-blue-200 rounded-md text-gray-600 px-3 py-3 mx-1 focus:outline-none focus:ring-2 focus:ring-sky-500" type="text" name="" placeholder="Enter a City" id="">
+                <button id="weather_btn" class="mb-6 justify-items-center bg-gradient-to-r from-purple-500 to-pink-500 rounded-md text-white p-3 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500 shadow-2xl">Get Weather</button>
+            </div>
+            <div id="weather_info" class="hidden">
+                <p id="city_name" class="text-white text-center font-bold text-3xl mb-2"></p>
+                <p id="temprature" class="text-white text-2xl"></p>
+                <p id="description" class="text-white text-2xl"></p>
+            </div>
+            <p id="error" class="text-white hidden">City not found. Please try again.</p>
+        </div> 
+    </div>
+</body>
+</html>
