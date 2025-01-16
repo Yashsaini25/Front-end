@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body class="bg-[url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] w-screen h-screen bg-cover  bg-center bg-no-repeat">
+    <div class="flex items-center justify-center  h-full w-full">
+        <div class="flex flex-col bg-black/35  max-w-sm w-full p-6 rounded-lg shadow-2xl">
+            
+            <h2 class="text-4xl text-white mb-8 font-bold text-center">Quiz App</h2>
+
+            <div id="question_container" class="flex flex-col items-center hidden">
+                <h2 id="question_text" class="text-2xl text-black mb-5"></h2>
+                <ul id="choices" class="w-full"></ul>
+                <button id="next_qn" class="bg-gradient-to-r text-white  from-sky-500 to-pink-500 rounded-md p-3 m-2 hover:bg-gradient-to-r hover:from-pink-500 hover:to-blue-500">Next Question</button>
+            </div>
+
+            <div id="result_container" class="flex items-center flex-col hidden">
+                <p id="score" class="text-2xl text-lime-500 font-bold mb-3"></p>
+                <button id="restart_quiz" class="text-white bg-gradient-to-r from-green-500 to-sky-500 p-3 rounded-md hover:bg-gradient-to-r hover:from-sky-500 hover:to-green-500">Restart Quiz</button>
+            </div>
+
+            <button id="start_quiz" class="text-center bg-gradient-to-l from-pink-500 to-yellow-500 rounded-md text-white p-3 hover:bg-gradient-to-l hover:from-yellow-500 hover:to-pink-500 shadow-2xl">Start Quiz</button>
+            
+        </div> 
+    </div>
+</body>
+</html>
